@@ -1,5 +1,6 @@
 import sympy as sp
-from sympy.parsing.sympy_parser import parse_expr
+import re
+from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application
 
 class EquationTokenizer:
     def __init__(self):
@@ -62,7 +63,15 @@ class EquationTokenizer:
 
     def tokenize_formula(self, formula_str):
         formula_str = formula_str.replace('^', '**')
-        expr = parse_expr(formula_str)
+        
+        # Identify all potential variable names (words starting with letters)
+        # and force them to be Symbols in local_dict to avoid collision with SymPy functions
+        words = re.findall(r'[a-zA-Z_][a-zA-Z0-9_]*', formula_str)
+        local_dict = {word: sp.Symbol(word) for word in words if word not in ['exp', 'sqrt', 'log', 'sin', 'cos', 'tan', 'pi', 'E']}
+
+        transformations = standard_transformations + (implicit_multiplication_application,)
+        expr = parse_expr(formula_str, transformations=transformations, local_dict=local_dict)
+
         bin_expr = self.binarize_expr(expr)
         tokens = self.sympy_to_prefix(bin_expr)
         return tokens
