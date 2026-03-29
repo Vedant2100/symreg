@@ -51,8 +51,6 @@ class EquationTokenizer:
     def tokenize_formula(self, formula_str):
         formula_str = formula_str.replace('^', '**')
         
-        # Identify all potential variable names (words starting with letters)
-        # and force them to be Symbols in local_dict to avoid collision with SymPy functions
         words = re.findall(r'[a-zA-Z_][a-zA-Z0-9_]*', formula_str)
         local_dict = {word: sp.Symbol(word) for word in words if word not in ['exp', 'sqrt', 'log', 'sin', 'cos', 'tan', 'pi', 'E']}
 
