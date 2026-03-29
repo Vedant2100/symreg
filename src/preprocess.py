@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from tokenizer import EquationTokenizer
+from eq_tokenizer import EquationTokenizer
 import traceback
 
 def main():
