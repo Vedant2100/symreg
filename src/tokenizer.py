@@ -6,60 +6,47 @@ class EquationTokenizer:
     def __init__(self):
         self.vocab = {}
     
+    def _binarize_list(self, op_name, args):
+        if len(args) == 1:
+            return self.sympy_to_prefix(args[0])
+        elif len(args) == 2:
+            return [op_name] + self.sympy_to_prefix(args[0]) + self.sympy_to_prefix(args[1])
+        else:
+            return [op_name] + self.sympy_to_prefix(args[0]) + self._binarize_list(op_name, args[1:])
+
     def sympy_to_prefix(self, node):
-        tokens = []
-        if isinstance(node, sp.Function):
-            tokens.append(node.func.__name__)
+        if node == sp.pi:
+            return ['pi']
+        elif node == sp.E:
+            return ['E']
+        elif isinstance(node, sp.Function):
+            tokens = [node.func.__name__]
             for arg in node.args:
                 tokens.extend(self.sympy_to_prefix(arg))
+            return tokens
         elif isinstance(node, sp.Add):
-            tokens.append('add')
-            for arg in node.args:
-                tokens.extend(self.sympy_to_prefix(arg))
+            return self._binarize_list('add', node.args)
         elif isinstance(node, sp.Mul):
-            tokens.append('mul')
-            for arg in node.args:
-                tokens.extend(self.sympy_to_prefix(arg))
+            return self._binarize_list('mul', node.args)
         elif isinstance(node, sp.Pow):
-            tokens.append('pow')
+            tokens = ['pow']
             for arg in node.args:
                 tokens.extend(self.sympy_to_prefix(arg))
+            return tokens
         elif isinstance(node, sp.Symbol):
-            tokens.append(node.name)
+            return [node.name]
         elif isinstance(node, sp.Number):
             if node.is_Integer or node.is_Rational:
-                tokens.append(str(node))
+                return [str(node)]
             else:
-                tokens.append('<C>')
+                return ['<C>']
         else:
             name = node.func.__name__ if hasattr(node, 'func') else str(node.__class__.__name__)
-            tokens.append(name)
+            tokens = [name]
             if hasattr(node, 'args'):
                 for arg in node.args:
                     tokens.extend(self.sympy_to_prefix(arg))
-        
-        return tokens
-
-    def binarize_expr(self, expr):
-        if expr.is_Atom:
-            return expr
-        
-        args = [self.binarize_expr(arg) for arg in expr.args]
-        
-        if isinstance(expr, (sp.Add, sp.Mul)) and len(args) > 2:
-            return self._binarize_op(expr.func, args)
-        
-        if expr == sp.pi:
-            return sp.Symbol('pi')
-        if expr == sp.E:
-            return sp.Symbol('E')
-            
-        return expr.func(*args)
-
-    def _binarize_op(self, op, args):
-        if len(args) == 2:
-            return op(*args)
-        return op(args[0], self._binarize_op(op, args[1:]))
+            return tokens
 
     def tokenize_formula(self, formula_str):
         formula_str = formula_str.replace('^', '**')
@@ -72,6 +59,5 @@ class EquationTokenizer:
         transformations = standard_transformations + (implicit_multiplication_application,)
         expr = parse_expr(formula_str, transformations=transformations, local_dict=local_dict)
 
-        bin_expr = self.binarize_expr(expr)
-        tokens = self.sympy_to_prefix(bin_expr)
+        tokens = self.sympy_to_prefix(expr)
         return tokens
