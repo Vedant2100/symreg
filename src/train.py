@@ -70,9 +70,9 @@ if __name__ == "__main__":
     model = MathTransformer(vocab_size=len(dataset.vocab), max_seq_len=64, max_dims=10).to(device)
     optimizer = optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-5)    
     
-    train_jepa(model, dataloader, optimizer, epochs=2, device=device)
+    train_jepa(model, dataloader, optimizer, epochs=100, device=device)
     
-    train_autoregressive(model, dataloader, optimizer, epochs=5, device=device)
+    train_autoregressive(model, dataloader, optimizer, epochs=300, device=device)
     
     torch.save(model.state_dict(), "../jepa_symreg_model.pt")
     print("Model saved.")

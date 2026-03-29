@@ -100,9 +100,13 @@ def evaluate_model(model, dataloader, device='cpu'):
             X, y, tokens = X.to(device), y.to(device), tokens.to(device)
             B = X.shape[0]
             
-            tgt_in = tokens[:, :-1]
-            logits = model.forward_autoregressive(X, y, tgt_in)
-            preds = torch.argmax(logits, dim=-1)
+            max_len = tokens.shape[1]
+            preds = torch.full((B, 1), 2, dtype=torch.long, device=device) # 2 is <START>
+            
+            for step in range(max_len - 1): #greedy
+                logits = model.forward_autoregressive(X, y, preds)
+                next_tokens = torch.argmax(logits[:, -1, :], dim=-1, keepdim=True)
+                preds = torch.cat([preds, next_tokens], dim=1)
             
             for i in range(B):
                 pred_seq = stringify_tokens(preds[i], dataloader.dataset.inv_vocab)
@@ -115,6 +119,11 @@ def evaluate_model(model, dataloader, device='cpu'):
                     true_formula = dataloader.dataset.eq_df.iloc[batch_idx * dataloader.batch_size + i]['Original_Formula']
                     if verify_symbolic_equivalence(pred_seq, true_formula):
                         symbolic_matches += 1
+                        
+                if i == 0 and batch_idx == 0:
+                    msg = f"Example Generation --->\nTarget: {' '.join(tgt_seq)}\nPreds : {' '.join(pred_seq)}\n"
+                    print(msg)
+                    logging.info(msg)
                         
                 total += 1
                 
