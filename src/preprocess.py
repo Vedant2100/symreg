@@ -1,24 +1,33 @@
+
 import pandas as pd
 import os
 from eq_tokenizer import EquationTokenizer
 import traceback
+import logging
+
+# Setup logging
+os.makedirs('logs', exist_ok=True)
+logging.basicConfig(
+    filename='logs/preprocess.log',
+    filemode='w',
+    format='%(asctime)s %(levelname)s: %(message)s',
+    level=logging.INFO
+)
 
 def main():
     target_csv = "../FeynmanEquations.csv"
     if not os.path.exists(target_csv):
         target_csv = "FeynmanEquations.csv"
-        
-    print(f"Loading {target_csv}...")
+    msg = f"Loading {target_csv}..."
+    print(msg)
+    logging.info(msg)
     df = pd.read_csv(target_csv)
-    
     df = df.dropna(subset=['Formula'])
-    
     tokenizer = EquationTokenizer()
-    
-    print(f"Found {len(df)} equations.")
-    
+    msg = f"Found {len(df)} equations."
+    print(msg)
+    logging.info(msg)
     tokenized_data = []
-    
     for idx, row in df.iterrows():
         formula = str(row['Formula']).strip()
         try:
@@ -29,16 +38,21 @@ def main():
                 'Tokens': " ".join(tokens)
             })
             if idx < 5:
-                print(f"\n[{row['Filename']}] {formula}")
-                print(f"  -> Tokens: {' '.join(tokens)}")
+                msg = f"\n[{row['Filename']}] {formula}\n  -> Tokens: {' '.join(tokens)}"
+                print(msg)
+                logging.info(msg)
         except Exception as e:
-            print(f"Failed to parse {formula}: {e}")
+            msg = f"Failed to parse {formula}: {e}"
+            print(msg)
+            logging.error(msg)
+            logging.error(traceback.format_exc())
             traceback.print_exc()
-            
     out_df = pd.DataFrame(tokenized_data)
     out_path = "../tokenized_equations.csv"
     out_df.to_csv(out_path, index=False)
-    print(f"\nSaved tokenized data: {out_path}.")
+    msg = f"\nSaved tokenized data: {out_path}."
+    print(msg)
+    logging.info(msg)
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,19 @@
+
 import torch
 import numpy as np
 import sympy as sp
 from dataloader import FeynmanDataset
+import logging
+import os
+
+# Setup logging
+os.makedirs('../logs', exist_ok=True)
+logging.basicConfig(
+    filename='../logs/evaluate.log',
+    filemode='w',
+    format='%(asctime)s %(levelname)s: %(message)s',
+    level=logging.INFO
+)
 
 def stringify_tokens(token_ids, inv_vocab):
     words = []
