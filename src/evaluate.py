@@ -7,9 +7,12 @@ import logging
 import os
 
 # Setup logging
+import datetime
 os.makedirs('logs', exist_ok=True)
+timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+logfile = f'logs/evaluate_{timestamp}.log'
 logging.basicConfig(
-    filename='logs/evaluate.log',
+    filename=logfile,
     filemode='w',
     format='%(asctime)s %(levelname)s: %(message)s',
     level=logging.INFO
