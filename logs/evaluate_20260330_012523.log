@@ -1,0 +1,4 @@
+2026-03-30 01:25:54,026 INFO: Example Generation --->
+Target: mul 1/2 mul pow 2 1/2 mul pow pi -1/2 exp mul -1/2 pow theta 2
+Preds : mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul mul
+
