@@ -7,9 +7,9 @@ import logging
 import os
 
 # Setup logging
-os.makedirs('../logs', exist_ok=True)
+os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
-    filename='../logs/evaluate.log',
+    filename='logs/evaluate.log',
     filemode='w',
     format='%(asctime)s %(levelname)s: %(message)s',
     level=logging.INFO

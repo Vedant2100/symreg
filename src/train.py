@@ -9,9 +9,9 @@ import logging
 import os
 
 # Setup logging
-os.makedirs('../logs', exist_ok=True)
+os.makedirs('logs', exist_ok=True)
 logging.basicConfig(
-    filename='../logs/train.log',
+    filename='logs/train.log',
     filemode='w',
     format='%(asctime)s %(levelname)s: %(message)s',
     level=logging.INFO
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     
     train_jepa(model, dataloader, optimizer, epochs=100, device=device)
     
-    train_autoregressive(model, dataloader, optimizer, epochs=300, device=device)
+    train_autoregressive(model, dataloader, optimizer, epochs=100, device=device)
     
     torch.save(model.state_dict(), "../jepa_symreg_model.pt")
     print("Model saved.")
