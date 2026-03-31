@@ -1,0 +1,203 @@
+2026-03-30 19:58:18,885 INFO: Initializing Framework on cpu...
+2026-03-30 19:58:21,853 INFO: --- Starting JEPA Pretraining ---
+2026-03-30 19:58:26,157 INFO: JEPA Phase Epoch 1/100 | Avg Loss: 0.3390
+2026-03-30 19:58:29,742 INFO: JEPA Phase Epoch 2/100 | Avg Loss: 0.2165
+2026-03-30 19:58:33,515 INFO: JEPA Phase Epoch 3/100 | Avg Loss: 0.1827
+2026-03-30 19:58:37,370 INFO: JEPA Phase Epoch 4/100 | Avg Loss: 0.1537
+2026-03-30 19:58:43,565 INFO: JEPA Phase Epoch 5/100 | Avg Loss: 0.1229
+2026-03-30 19:58:47,052 INFO: JEPA Phase Epoch 6/100 | Avg Loss: 0.0985
+2026-03-30 19:58:50,441 INFO: JEPA Phase Epoch 7/100 | Avg Loss: 0.0790
+2026-03-30 19:58:53,563 INFO: JEPA Phase Epoch 8/100 | Avg Loss: 0.0624
+2026-03-30 19:58:57,114 INFO: JEPA Phase Epoch 9/100 | Avg Loss: 0.0502
+2026-03-30 19:59:00,477 INFO: JEPA Phase Epoch 10/100 | Avg Loss: 0.0421
+2026-03-30 19:59:04,454 INFO: JEPA Phase Epoch 11/100 | Avg Loss: 0.0363
+2026-03-30 19:59:07,723 INFO: JEPA Phase Epoch 12/100 | Avg Loss: 0.0330
+2026-03-30 19:59:11,185 INFO: JEPA Phase Epoch 13/100 | Avg Loss: 0.0298
+2026-03-30 19:59:14,055 INFO: JEPA Phase Epoch 14/100 | Avg Loss: 0.0277
+2026-03-30 19:59:16,966 INFO: JEPA Phase Epoch 15/100 | Avg Loss: 0.0259
+2026-03-30 19:59:19,823 INFO: JEPA Phase Epoch 16/100 | Avg Loss: 0.0249
+2026-03-30 19:59:23,479 INFO: JEPA Phase Epoch 17/100 | Avg Loss: 0.0238
+2026-03-30 19:59:26,466 INFO: JEPA Phase Epoch 18/100 | Avg Loss: 0.0232
+2026-03-30 19:59:29,225 INFO: JEPA Phase Epoch 19/100 | Avg Loss: 0.0226
+2026-03-30 19:59:32,024 INFO: JEPA Phase Epoch 20/100 | Avg Loss: 0.0222
+2026-03-30 19:59:35,008 INFO: JEPA Phase Epoch 21/100 | Avg Loss: 0.0217
+2026-03-30 19:59:39,000 INFO: JEPA Phase Epoch 22/100 | Avg Loss: 0.0215
+2026-03-30 19:59:42,953 INFO: JEPA Phase Epoch 23/100 | Avg Loss: 0.0214
+2026-03-30 19:59:46,092 INFO: JEPA Phase Epoch 24/100 | Avg Loss: 0.0209
+2026-03-30 19:59:48,769 INFO: JEPA Phase Epoch 25/100 | Avg Loss: 0.0208
+2026-03-30 19:59:51,880 INFO: JEPA Phase Epoch 26/100 | Avg Loss: 0.0206
+2026-03-30 19:59:54,965 INFO: JEPA Phase Epoch 27/100 | Avg Loss: 0.0202
+2026-03-30 19:59:57,768 INFO: JEPA Phase Epoch 28/100 | Avg Loss: 0.0203
+2026-03-30 20:00:00,631 INFO: JEPA Phase Epoch 29/100 | Avg Loss: 0.0201
+2026-03-30 20:00:04,444 INFO: JEPA Phase Epoch 30/100 | Avg Loss: 0.0201
+2026-03-30 20:00:07,622 INFO: JEPA Phase Epoch 31/100 | Avg Loss: 0.0198
+2026-03-30 20:00:10,678 INFO: JEPA Phase Epoch 32/100 | Avg Loss: 0.0199
+2026-03-30 20:00:14,996 INFO: JEPA Phase Epoch 33/100 | Avg Loss: 0.0197
+2026-03-30 20:00:18,100 INFO: JEPA Phase Epoch 34/100 | Avg Loss: 0.0195
+2026-03-30 20:00:21,289 INFO: JEPA Phase Epoch 35/100 | Avg Loss: 0.0195
+2026-03-30 20:00:24,574 INFO: JEPA Phase Epoch 36/100 | Avg Loss: 0.0192
+2026-03-30 20:00:27,471 INFO: JEPA Phase Epoch 37/100 | Avg Loss: 0.0191
+2026-03-30 20:00:30,578 INFO: JEPA Phase Epoch 38/100 | Avg Loss: 0.0189
+2026-03-30 20:00:34,247 INFO: JEPA Phase Epoch 39/100 | Avg Loss: 0.0189
+2026-03-30 20:00:37,213 INFO: JEPA Phase Epoch 40/100 | Avg Loss: 0.0189
+2026-03-30 20:00:40,305 INFO: JEPA Phase Epoch 41/100 | Avg Loss: 0.0186
+2026-03-30 20:00:43,547 INFO: JEPA Phase Epoch 42/100 | Avg Loss: 0.0184
+2026-03-30 20:00:46,676 INFO: JEPA Phase Epoch 43/100 | Avg Loss: 0.0184
+2026-03-30 20:00:49,470 INFO: JEPA Phase Epoch 44/100 | Avg Loss: 0.0183
+2026-03-30 20:00:53,241 INFO: JEPA Phase Epoch 45/100 | Avg Loss: 0.0182
+2026-03-30 20:00:56,076 INFO: JEPA Phase Epoch 46/100 | Avg Loss: 0.0181
+2026-03-30 20:00:59,011 INFO: JEPA Phase Epoch 47/100 | Avg Loss: 0.0179
+2026-03-30 20:01:01,972 INFO: JEPA Phase Epoch 48/100 | Avg Loss: 0.0179
+2026-03-30 20:01:05,841 INFO: JEPA Phase Epoch 49/100 | Avg Loss: 0.0179
+2026-03-30 20:01:10,773 INFO: JEPA Phase Epoch 50/100 | Avg Loss: 0.0176
+2026-03-30 20:01:14,199 INFO: JEPA Phase Epoch 51/100 | Avg Loss: 0.0174
+2026-03-30 20:01:17,098 INFO: JEPA Phase Epoch 52/100 | Avg Loss: 0.0173
+2026-03-30 20:01:20,357 INFO: JEPA Phase Epoch 53/100 | Avg Loss: 0.0174
+2026-03-30 20:01:23,485 INFO: JEPA Phase Epoch 54/100 | Avg Loss: 0.0170
+2026-03-30 20:01:26,680 INFO: JEPA Phase Epoch 55/100 | Avg Loss: 0.0170
+2026-03-30 20:01:29,245 INFO: JEPA Phase Epoch 56/100 | Avg Loss: 0.0171
+2026-03-30 20:01:31,873 INFO: JEPA Phase Epoch 57/100 | Avg Loss: 0.0168
+2026-03-30 20:01:34,567 INFO: JEPA Phase Epoch 58/100 | Avg Loss: 0.0166
+2026-03-30 20:01:37,191 INFO: JEPA Phase Epoch 59/100 | Avg Loss: 0.0165
+2026-03-30 20:01:39,829 INFO: JEPA Phase Epoch 60/100 | Avg Loss: 0.0164
+2026-03-30 20:01:42,673 INFO: JEPA Phase Epoch 61/100 | Avg Loss: 0.0164
+2026-03-30 20:01:45,324 INFO: JEPA Phase Epoch 62/100 | Avg Loss: 0.0164
+2026-03-30 20:01:47,898 INFO: JEPA Phase Epoch 63/100 | Avg Loss: 0.0163
+2026-03-30 20:01:50,616 INFO: JEPA Phase Epoch 64/100 | Avg Loss: 0.0162
+2026-03-30 20:01:53,320 INFO: JEPA Phase Epoch 65/100 | Avg Loss: 0.0160
+2026-03-30 20:01:56,102 INFO: JEPA Phase Epoch 66/100 | Avg Loss: 0.0160
+2026-03-30 20:01:58,816 INFO: JEPA Phase Epoch 67/100 | Avg Loss: 0.0158
+2026-03-30 20:02:01,487 INFO: JEPA Phase Epoch 68/100 | Avg Loss: 0.0158
+2026-03-30 20:02:04,073 INFO: JEPA Phase Epoch 69/100 | Avg Loss: 0.0157
+2026-03-30 20:02:06,707 INFO: JEPA Phase Epoch 70/100 | Avg Loss: 0.0158
+2026-03-30 20:02:09,294 INFO: JEPA Phase Epoch 71/100 | Avg Loss: 0.0156
+2026-03-30 20:02:11,927 INFO: JEPA Phase Epoch 72/100 | Avg Loss: 0.0156
+2026-03-30 20:02:14,515 INFO: JEPA Phase Epoch 73/100 | Avg Loss: 0.0153
+2026-03-30 20:02:17,141 INFO: JEPA Phase Epoch 74/100 | Avg Loss: 0.0154
+2026-03-30 20:02:19,732 INFO: JEPA Phase Epoch 75/100 | Avg Loss: 0.0154
+2026-03-30 20:02:22,332 INFO: JEPA Phase Epoch 76/100 | Avg Loss: 0.0152
+2026-03-30 20:02:24,961 INFO: JEPA Phase Epoch 77/100 | Avg Loss: 0.0154
+2026-03-30 20:02:27,552 INFO: JEPA Phase Epoch 78/100 | Avg Loss: 0.0153
+2026-03-30 20:02:30,135 INFO: JEPA Phase Epoch 79/100 | Avg Loss: 0.0152
+2026-03-30 20:02:33,420 INFO: JEPA Phase Epoch 80/100 | Avg Loss: 0.0150
+2026-03-30 20:02:36,059 INFO: JEPA Phase Epoch 81/100 | Avg Loss: 0.0152
+2026-03-30 20:02:38,645 INFO: JEPA Phase Epoch 82/100 | Avg Loss: 0.0154
+2026-03-30 20:02:41,346 INFO: JEPA Phase Epoch 83/100 | Avg Loss: 0.0154
+2026-03-30 20:02:43,917 INFO: JEPA Phase Epoch 84/100 | Avg Loss: 0.0150
+2026-03-30 20:02:46,668 INFO: JEPA Phase Epoch 85/100 | Avg Loss: 0.0152
+2026-03-30 20:02:49,381 INFO: JEPA Phase Epoch 86/100 | Avg Loss: 0.0150
+2026-03-30 20:02:52,262 INFO: JEPA Phase Epoch 87/100 | Avg Loss: 0.0152
+2026-03-30 20:02:55,113 INFO: JEPA Phase Epoch 88/100 | Avg Loss: 0.0149
+2026-03-30 20:02:57,837 INFO: JEPA Phase Epoch 89/100 | Avg Loss: 0.0151
+2026-03-30 20:03:00,497 INFO: JEPA Phase Epoch 90/100 | Avg Loss: 0.0147
+2026-03-30 20:03:03,148 INFO: JEPA Phase Epoch 91/100 | Avg Loss: 0.0148
+2026-03-30 20:03:05,766 INFO: JEPA Phase Epoch 92/100 | Avg Loss: 0.0149
+2026-03-30 20:03:08,345 INFO: JEPA Phase Epoch 93/100 | Avg Loss: 0.0146
+2026-03-30 20:03:10,978 INFO: JEPA Phase Epoch 94/100 | Avg Loss: 0.0144
+2026-03-30 20:03:13,574 INFO: JEPA Phase Epoch 95/100 | Avg Loss: 0.0150
+2026-03-30 20:03:16,205 INFO: JEPA Phase Epoch 96/100 | Avg Loss: 0.0152
+2026-03-30 20:03:18,920 INFO: JEPA Phase Epoch 97/100 | Avg Loss: 0.0149
+2026-03-30 20:03:21,513 INFO: JEPA Phase Epoch 98/100 | Avg Loss: 0.0156
+2026-03-30 20:03:24,156 INFO: JEPA Phase Epoch 99/100 | Avg Loss: 0.0151
+2026-03-30 20:03:26,801 INFO: JEPA Phase Epoch 100/100 | Avg Loss: 0.0150
+2026-03-30 20:03:26,804 INFO: --- Starting Symbolic Regression Finetuning Phase ---
+2026-03-30 20:03:37,148 INFO: Causal Output Phase Epoch 1/100 | Avg Loss: 4.0929
+2026-03-30 20:03:56,048 INFO: Causal Output Phase Epoch 2/100 | Avg Loss: 3.3137
+2026-03-30 20:04:05,629 INFO: Causal Output Phase Epoch 3/100 | Avg Loss: 3.2445
+2026-03-30 20:04:13,954 INFO: Causal Output Phase Epoch 4/100 | Avg Loss: 3.2689
+2026-03-30 20:04:22,207 INFO: Causal Output Phase Epoch 5/100 | Avg Loss: 3.2167
+2026-03-30 20:04:30,686 INFO: Causal Output Phase Epoch 6/100 | Avg Loss: 3.2448
+2026-03-30 20:04:39,827 INFO: Causal Output Phase Epoch 7/100 | Avg Loss: 3.2201
+2026-03-30 20:04:48,045 INFO: Causal Output Phase Epoch 8/100 | Avg Loss: 3.2400
+2026-03-30 20:04:56,554 INFO: Causal Output Phase Epoch 9/100 | Avg Loss: 3.2463
+2026-03-30 20:05:04,839 INFO: Causal Output Phase Epoch 10/100 | Avg Loss: 3.2349
+2026-03-30 20:05:13,115 INFO: Causal Output Phase Epoch 11/100 | Avg Loss: 3.2210
+2026-03-30 20:05:21,556 INFO: Causal Output Phase Epoch 12/100 | Avg Loss: 3.2262
+2026-03-30 20:05:30,158 INFO: Causal Output Phase Epoch 13/100 | Avg Loss: 3.2866
+2026-03-30 20:05:39,655 INFO: Causal Output Phase Epoch 14/100 | Avg Loss: 3.2627
+2026-03-30 20:05:49,121 INFO: Causal Output Phase Epoch 15/100 | Avg Loss: 3.2679
+2026-03-30 20:05:58,823 INFO: Causal Output Phase Epoch 16/100 | Avg Loss: 3.2533
+2026-03-30 20:06:07,279 INFO: Causal Output Phase Epoch 17/100 | Avg Loss: 3.2792
+2026-03-30 20:06:15,680 INFO: Causal Output Phase Epoch 18/100 | Avg Loss: 3.2067
+2026-03-30 20:06:24,233 INFO: Causal Output Phase Epoch 19/100 | Avg Loss: 3.1852
+2026-03-30 20:06:32,711 INFO: Causal Output Phase Epoch 20/100 | Avg Loss: 3.1925
+2026-03-30 20:06:41,513 INFO: Causal Output Phase Epoch 21/100 | Avg Loss: 3.2698
+2026-03-30 20:06:50,218 INFO: Causal Output Phase Epoch 22/100 | Avg Loss: 3.1949
+2026-03-30 20:06:59,956 INFO: Causal Output Phase Epoch 23/100 | Avg Loss: 3.1741
+2026-03-30 20:07:08,234 INFO: Causal Output Phase Epoch 24/100 | Avg Loss: 3.2097
+2026-03-30 20:07:16,542 INFO: Causal Output Phase Epoch 25/100 | Avg Loss: 3.2262
+2026-03-30 20:07:25,296 INFO: Causal Output Phase Epoch 26/100 | Avg Loss: 3.2459
+2026-03-30 20:07:34,155 INFO: Causal Output Phase Epoch 27/100 | Avg Loss: 3.2203
+2026-03-30 20:07:43,532 INFO: Causal Output Phase Epoch 28/100 | Avg Loss: 3.2150
+2026-03-30 20:07:53,462 INFO: Causal Output Phase Epoch 29/100 | Avg Loss: 3.1649
+2026-03-30 20:08:04,190 INFO: Causal Output Phase Epoch 30/100 | Avg Loss: 3.2478
+2026-03-30 20:08:16,380 INFO: Causal Output Phase Epoch 31/100 | Avg Loss: 3.2523
+2026-03-30 20:08:25,839 INFO: Causal Output Phase Epoch 32/100 | Avg Loss: 3.2218
+2026-03-30 20:08:36,385 INFO: Causal Output Phase Epoch 33/100 | Avg Loss: 3.2195
+2026-03-30 20:08:45,337 INFO: Causal Output Phase Epoch 34/100 | Avg Loss: 3.2652
+2026-03-30 20:08:54,895 INFO: Causal Output Phase Epoch 35/100 | Avg Loss: 3.2788
+2026-03-30 20:09:04,071 INFO: Causal Output Phase Epoch 36/100 | Avg Loss: 3.2392
+2026-03-30 20:09:11,940 INFO: Causal Output Phase Epoch 37/100 | Avg Loss: 3.2803
+2026-03-30 20:09:19,771 INFO: Causal Output Phase Epoch 38/100 | Avg Loss: 3.2287
+2026-03-30 20:09:28,074 INFO: Causal Output Phase Epoch 39/100 | Avg Loss: 3.2174
+2026-03-30 20:09:37,293 INFO: Causal Output Phase Epoch 40/100 | Avg Loss: 3.2858
+2026-03-30 20:09:45,417 INFO: Causal Output Phase Epoch 41/100 | Avg Loss: 3.2497
+2026-03-30 20:09:53,213 INFO: Causal Output Phase Epoch 42/100 | Avg Loss: 3.2116
+2026-03-30 20:10:01,107 INFO: Causal Output Phase Epoch 43/100 | Avg Loss: 3.2434
+2026-03-30 20:10:09,491 INFO: Causal Output Phase Epoch 44/100 | Avg Loss: 3.2617
+2026-03-30 20:10:17,457 INFO: Causal Output Phase Epoch 45/100 | Avg Loss: 3.2312
+2026-03-30 20:10:25,688 INFO: Causal Output Phase Epoch 46/100 | Avg Loss: 3.2535
+2026-03-30 20:10:34,345 INFO: Causal Output Phase Epoch 47/100 | Avg Loss: 3.1957
+2026-03-30 20:10:42,834 INFO: Causal Output Phase Epoch 48/100 | Avg Loss: 3.2195
+2026-03-30 20:10:51,950 INFO: Causal Output Phase Epoch 49/100 | Avg Loss: 3.2347
+2026-03-30 20:11:01,581 INFO: Causal Output Phase Epoch 50/100 | Avg Loss: 3.1886
+2026-03-30 20:11:11,382 INFO: Causal Output Phase Epoch 51/100 | Avg Loss: 3.1950
+2026-03-30 20:11:20,400 INFO: Causal Output Phase Epoch 52/100 | Avg Loss: 3.2192
+2026-03-30 20:11:29,016 INFO: Causal Output Phase Epoch 53/100 | Avg Loss: 3.2528
+2026-03-30 20:11:42,760 INFO: Causal Output Phase Epoch 54/100 | Avg Loss: 3.2148
+2026-03-30 20:11:52,811 INFO: Causal Output Phase Epoch 55/100 | Avg Loss: 3.2320
+2026-03-30 20:12:01,053 INFO: Causal Output Phase Epoch 56/100 | Avg Loss: 3.2161
+2026-03-30 20:12:10,550 INFO: Causal Output Phase Epoch 57/100 | Avg Loss: 3.1768
+2026-03-30 20:12:19,286 INFO: Causal Output Phase Epoch 58/100 | Avg Loss: 3.2200
+2026-03-30 20:12:28,659 INFO: Causal Output Phase Epoch 59/100 | Avg Loss: 3.2282
+2026-03-30 20:12:38,331 INFO: Causal Output Phase Epoch 60/100 | Avg Loss: 3.2139
+2026-03-30 20:12:47,679 INFO: Causal Output Phase Epoch 61/100 | Avg Loss: 3.2108
+2026-03-30 20:12:56,617 INFO: Causal Output Phase Epoch 62/100 | Avg Loss: 3.2824
+2026-03-30 20:13:05,510 INFO: Causal Output Phase Epoch 63/100 | Avg Loss: 3.2148
+2026-03-30 20:13:14,994 INFO: Causal Output Phase Epoch 64/100 | Avg Loss: 3.2074
+2026-03-30 20:13:24,783 INFO: Causal Output Phase Epoch 65/100 | Avg Loss: 3.2044
+2026-03-30 20:13:37,186 INFO: Causal Output Phase Epoch 66/100 | Avg Loss: 3.2054
+2026-03-30 20:13:45,831 INFO: Causal Output Phase Epoch 67/100 | Avg Loss: 3.2262
+2026-03-30 20:13:53,670 INFO: Causal Output Phase Epoch 68/100 | Avg Loss: 3.2694
+2026-03-30 20:14:02,663 INFO: Causal Output Phase Epoch 69/100 | Avg Loss: 3.3024
+2026-03-30 20:14:13,431 INFO: Causal Output Phase Epoch 70/100 | Avg Loss: 3.2562
+2026-03-30 20:14:28,102 INFO: Causal Output Phase Epoch 71/100 | Avg Loss: 3.2510
+2026-03-30 20:14:42,957 INFO: Causal Output Phase Epoch 72/100 | Avg Loss: 3.2289
+2026-03-30 20:14:51,881 INFO: Causal Output Phase Epoch 73/100 | Avg Loss: 3.1717
+2026-03-30 20:14:59,982 INFO: Causal Output Phase Epoch 74/100 | Avg Loss: 3.2138
+2026-03-30 20:15:09,139 INFO: Causal Output Phase Epoch 75/100 | Avg Loss: 3.2022
+2026-03-30 20:15:17,303 INFO: Causal Output Phase Epoch 76/100 | Avg Loss: 3.1829
+2026-03-30 20:15:25,519 INFO: Causal Output Phase Epoch 77/100 | Avg Loss: 3.1911
+2026-03-30 20:15:34,016 INFO: Causal Output Phase Epoch 78/100 | Avg Loss: 3.3309
+2026-03-30 20:15:42,160 INFO: Causal Output Phase Epoch 79/100 | Avg Loss: 3.2092
+2026-03-30 20:15:50,172 INFO: Causal Output Phase Epoch 80/100 | Avg Loss: 3.2413
+2026-03-30 20:15:58,896 INFO: Causal Output Phase Epoch 81/100 | Avg Loss: 3.2831
+2026-03-30 20:16:10,570 INFO: Causal Output Phase Epoch 82/100 | Avg Loss: 3.2616
+2026-03-30 20:16:20,657 INFO: Causal Output Phase Epoch 83/100 | Avg Loss: 3.3233
+2026-03-30 20:16:29,554 INFO: Causal Output Phase Epoch 84/100 | Avg Loss: 3.2587
+2026-03-30 20:16:38,293 INFO: Causal Output Phase Epoch 85/100 | Avg Loss: 3.2155
+2026-03-30 20:16:47,699 INFO: Causal Output Phase Epoch 86/100 | Avg Loss: 3.2182
+2026-03-30 20:16:56,170 INFO: Causal Output Phase Epoch 87/100 | Avg Loss: 3.3040
+2026-03-30 20:17:04,142 INFO: Causal Output Phase Epoch 88/100 | Avg Loss: 3.2135
+2026-03-30 20:17:12,080 INFO: Causal Output Phase Epoch 89/100 | Avg Loss: 3.2225
+2026-03-30 20:17:19,994 INFO: Causal Output Phase Epoch 90/100 | Avg Loss: 3.2132
+2026-03-30 20:17:27,922 INFO: Causal Output Phase Epoch 91/100 | Avg Loss: 3.1842
+2026-03-30 20:17:35,913 INFO: Causal Output Phase Epoch 92/100 | Avg Loss: 3.2959
+2026-03-30 20:17:43,814 INFO: Causal Output Phase Epoch 93/100 | Avg Loss: 3.1825
+2026-03-30 20:17:51,787 INFO: Causal Output Phase Epoch 94/100 | Avg Loss: 3.2092
+2026-03-30 20:17:59,645 INFO: Causal Output Phase Epoch 95/100 | Avg Loss: 3.1812
+2026-03-30 20:18:10,393 INFO: Causal Output Phase Epoch 96/100 | Avg Loss: 3.2348
+2026-03-30 20:18:19,370 INFO: Causal Output Phase Epoch 97/100 | Avg Loss: 3.2940
+2026-03-30 20:18:28,006 INFO: Causal Output Phase Epoch 98/100 | Avg Loss: 3.2151
+2026-03-30 20:18:36,887 INFO: Causal Output Phase Epoch 99/100 | Avg Loss: 3.2607
+2026-03-30 20:18:45,794 INFO: Causal Output Phase Epoch 100/100 | Avg Loss: 3.1956

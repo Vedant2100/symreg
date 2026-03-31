@@ -1,0 +1,19 @@
+2026-03-30 19:57:40,084 INFO: Loading FeynmanEquations.csv...
+2026-03-30 19:57:40,104 INFO: Found 100 equations.
+2026-03-30 19:57:40,175 INFO: 
+[I.6.2a] exp(-theta**2/2)/sqrt(2*pi)
+  -> Tokens: mul 1/2 mul pow 2 1/2 mul pow pi -1/2 exp mul -1/2 pow theta 2
+2026-03-30 19:57:40,181 INFO: 
+[I.6.2] exp(-(theta/sigma)**2/2)/(sqrt(2*pi)*sigma)
+  -> Tokens: mul 1/2 mul pow 2 1/2 mul pow pi -1/2 mul pow sigma -1 exp mul -1/2 mul pow sigma -2 pow theta 2
+2026-03-30 19:57:40,187 INFO: 
+[I.6.2b] exp(-((theta-theta1)/sigma)**2/2)/(sqrt(2*pi)*sigma)
+  -> Tokens: mul 1/2 mul pow 2 1/2 mul pow pi -1/2 mul pow sigma -1 exp mul -1/2 mul pow sigma -2 pow add theta mul -1 theta1 2
+2026-03-30 19:57:40,195 INFO: 
+[I.8.14] sqrt((x2-x1)**2+(y2-y1)**2)
+  -> Tokens: pow add pow add x2 mul -1 x1 2 pow add y2 mul -1 y1 2 1/2
+2026-03-30 19:57:40,198 INFO: 
+[I.9.18] G*m1*m2/((x2-x1)**2+(y2-y1)**2+(z2-z1)**2)
+  -> Tokens: mul G mul m1 mul m2 pow add pow add x2 mul -1 x1 2 add pow add y2 mul -1 y1 2 pow add z2 mul -1 z1 2 -1
+2026-03-30 19:57:40,404 INFO: 
+Saved tokenized data: ../tokenized_equations.csv.
