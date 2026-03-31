@@ -1,6 +1,6 @@
 # Faster Scientific Discovery using a reduced-size LM-JEPA for Symbolic Regression.
 
-This repository contains the prototype and screening test implementation for my ML4SCI GSoC proposal.
+This repository contains the screening test implementation for my ML4SCI GSoC proposal for LM-JEPA for Symbolic Regression.
 
 ### Tokenization Rationale 
 To preprocess `FeynmanEquations.csv`, I mapped the formulas into strictly **binary prefix notation trees** using SymPy's AST parser (e.g., forcing `x + y + z` into `add(x, add(y, z))`).
