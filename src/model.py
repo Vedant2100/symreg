@@ -24,7 +24,13 @@ class MathTransformer(nn.Module):
             nn.Linear(embed_dim * 2, embed_dim)
         )
         
-        self.data_proj = nn.Linear(max_dims + 1, embed_dim)
+        self.data_proj = nn.Sequential(
+            nn.Linear(max_dims + 1, embed_dim),
+            nn.GELU(),
+            nn.Linear(embed_dim, embed_dim),
+            nn.GELU(),
+            nn.Linear(embed_dim, embed_dim)
+        )
         self.data_encoder = nn.TransformerEncoder(encoder_layer, num_layers=2)
         
         decoder_layer = nn.TransformerDecoderLayer(d_model=embed_dim, nhead=num_heads, batch_first=True)
@@ -49,7 +55,15 @@ class MathTransformer(nn.Module):
     def forward_autoregressive(self, X, y, tgt_seq):
         B, num_samples, dims = X.shape
         
-        numeric_cat = torch.cat([X, y], dim=-1)
+        mean_X = X.mean(dim=1, keepdim=True)
+        std_X = X.std(dim=1, keepdim=True).clamp(min=1e-5)
+        norm_X = (X - mean_X) / std_X
+
+        mean_y = y.mean(dim=1, keepdim=True)
+        std_y = y.std(dim=1, keepdim=True).clamp(min=1e-5)
+        norm_y = (y - mean_y) / std_y
+        
+        numeric_cat = torch.cat([norm_X, norm_y], dim=-1)
         
         data_emb = self.data_proj(numeric_cat)
         memory = self.data_encoder(data_emb)
