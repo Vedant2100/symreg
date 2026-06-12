@@ -1,0 +1,65 @@
+Tasks for Prospective GSoC 2026 Applicants for the 
+Symbolic AI Projects
+
+--------------------------------------------------------------------------------------------------------------------
+Submission Guidelines	
+IN ORDER TO BE CONSIDERED AS AN APPLICANT FOR GOOGLE SUMMER OF CODE YOU MUST ALSO SUBMIT A PROPOSAL THROUGH THE GOOGLE SUMMER OF CODE PORTAL
+Additional tasks are listed below
+You must calculate and present the required evaluation metrics.
+When completed, please use this Google form to submit
+
+References:
+AI Feynman: a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481.
+
+Below are the tasks that we will use to evaluate prospective students for Symbolic Calculation Projects.  After completing the first common test, please thoroughly complete the specific second test for your project of interest and (optionally) other second tests if you would like to also be considered for additional Symbolic Calculation projects at the same time (this may increase your chances of success, but make sure you don't do it at the expense of the specific project you are interested in)
+
+
+Note: please work in your own github branch (i.e. NO PRs should be made). Send us a link to your code when you are finished and we will evaluate it. 
+
+Common Task 1:
+Do part 1.1 for projects related to symbolic regression and 1.2 for projects related to square amplitude calculation.
+
+Common Task 1.1. Dataset preprocessing 
+Dataset:
+
+https://space.mit.edu/home/tegmark/aifeynman.html 
+Note: The authors of this dataset are not affiliated with ML4SCI
+
+Description:
+Download the Feynman_with_units.tar.gz features and corresponding FeynmanEquations.csv targets. Preprocess and tokenize the target data and document your rationale for choice of tokenization.
+
+Common Task 1.2 Dataset preprocessing
+Dataset:
+
+https://alabama.box.com/s/xhgr2onrn503jyse2fs5vxtapg0oifcs 
+
+Dataset:
+Download the dataset (split across 17 files for two different physics models: QED and QCD) and preprocess and tokenize the target data and document your rationale for choice of tokenization. Data file is formatted with rows like 
+“interaction : Feynman diagram : amplitude : squared amplitude”
+Here the amplitudes are the input sequences and squared amplitudes are the target sequences. Note that indices like _123456 grow over the course of the dataset and should be normalized for each amplitude and squared amplitude. Use an 80-10-10 split of train-val-test across all files.
+
+
+Specific Test 2: Train/Evaluate advanced model
+For projects related to squared amplitude calculation: For each of the two physics models separately, QED 2-to-2 and QCD 2-to-2:
+Train a model that leverages some advanced techniques. The model you use should relate to the project you’re applying for. Evaluate the performance of the model.
+For projects related to symbolic regression:
+Train a model on the AI-Feynman dataset. The model you use should relate to the project you’re applying for. Evaluate the performance of the model.
+
+
+2.1-2.3:
+Physics-Informed Encoding and Decoding for Squared Amplitude Calculation
+Physics-Informed Models for Squared Amplitude Calculation
+Foundation Models for Squared Amplitude Calculation
+Model: Transformer or graph model incorporating one or more of the proposed physics-informed encoding or decoding ideas. For the foundation model project, one idea for encoding and one idea for decoding should be included. 
+
+2.4: Titans for squared amplitude calculation
+Model: One of the core architectures from Google’s paper introducing Titans concept
+
+2.5: LM-JEPA for Squared Amplitude Calculation
+Model: Transformer model integrated with LM-JEPA pretraining.
+
+2.6: Using Next-Gen Transformers to Seed Generative Models for Symbolic Regression
+Model: Transformer model used to seed a generative technique for symbolic regression. Should build on previous code solutions from ML4SCI GSoC 2025 combining models and generative frameworks.
+
+2.7:  LM-JEPA for Symbolic Regression
+Model: Transformer model integrated with LM-JEPA pretraining.
